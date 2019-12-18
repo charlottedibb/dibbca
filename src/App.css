@@ -11,8 +11,6 @@
 
 .hero-vid {
   width: 100%;
-  /* height: 100%; */
-  /* overflow: hidden; */
 }
 
 .angle {
@@ -163,7 +161,6 @@ td {
 }
 
 .upside-down {
-  /* height: 100vh; */
   transform: scaleY(-1);
 }
 
