@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import "./App.css";
 import "./landing.css";
@@ -23,6 +23,8 @@ import {
 } from "react-icons/fa";
 
 function App() {
+  const [video, updateVideo] = useState("hidden");
+  const [gif, updateGif] = useState("visible");
   const [skills, updateSkills] = useState("hide");
   const [project, updateProject] = useState({
     js: "off",
@@ -118,6 +120,12 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    console.log("in tha useEffect");
+    updateVideo("visible");
+    updateGif("hidden");
+  }, []);
+
   const skillsShow = function() {
     updateSkills("show");
   };
@@ -131,9 +139,20 @@ function App() {
       <Parallax pages={5} style={{ background: "#fda4ff" }}>
         <ParallaxLayer offset={0} speed={0}>
           <div className="hero-vid-container">
-            <video className="hero-vid" autoPlay loop muted>
+            <video
+              className="hero-vid"
+              autoPlay
+              loop
+              muted
+              style={{ visibility: { video } }}
+            >
               <source src={ocean} type="video/mp4" />
             </video>
+            <img
+              src={require("./gifs/ocean.gif")}
+              alt="gif of animated ocean"
+              style={{ visibility: { gif }, width: "100%" }}
+            />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.5} speed={1}>
@@ -164,12 +183,13 @@ function App() {
         <ParallaxLayer offset={1} speed={0.2}>
           <div className="info">
             <p className="summary">
-              I’m a McGill University psychology grad with a past life in Human Resources. Seeking new and more interesting challenges, I took
-              the leap into programming and web development. I love making
+              I’m a McGill University psychology grad with a past life in Human
+              Resources. Seeking new and more interesting challenges, I took the
+              leap into programming and web development. I love making
               beautiful, robust UIs for broad audiences, solving tricky
               problems, and seeing my applications come to life. Aside from
-              coding, I enjoy cross stitching, making 3D images and animations in
-              Blender, and reading sci-fi novels.
+              coding, I enjoy cross stitching, creating 3D images and animations
+              in Blender, and reading sci-fi novels.
             </p>
           </div>
         </ParallaxLayer>
