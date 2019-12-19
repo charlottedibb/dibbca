@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
+import MyForm from "./myform.js";
 import "./App.css";
 import "./landing.css";
 import "./projects.css";
@@ -24,7 +25,7 @@ import {
 
 function App() {
   const [video, updateVideo] = useState("hidden");
-  const [gif, updateGif] = useState("visible");
+  const [gif, updateGif] = useState("");
   const [skills, updateSkills] = useState("hide");
   const [project, updateProject] = useState({
     js: "off",
@@ -120,39 +121,36 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    console.log("in tha useEffect");
-    updateVideo("visible");
-    updateGif("hidden");
-  }, []);
-
+  
   const skillsShow = function() {
     updateSkills("show");
   };
-
+  
   const skillsHide = function() {
     updateSkills("hide");
   };
+  
+  useEffect(() => {
+    console.log("in the useeffect")
+    updateVideo("visible");
+    updateGif("hide");
+  }, []);
 
   return (
     <div className="App">
       <Parallax pages={5} style={{ background: "#fda4ff" }}>
         <ParallaxLayer offset={0} speed={0}>
-          <div className="hero-vid-container">
-            <video
-              className="hero-vid"
-              autoPlay
-              loop
-              muted
-              style={{ visibility: { video } }}
-            >
+          <img
+            // src={require("./gifs/ocean.gif")}
+            src={require("./gifs/edit.gif")}
+            alt="gif of animated ocean"
+            style={{ width: "100vw"}}
+            className={gif}
+          />
+          <div className="hero-vid-container" style={{ visibility: { video } }}>
+            <video className="hero-vid" autoPlay loop muted>
               <source src={ocean} type="video/mp4" />
             </video>
-            <img
-              src={require("./gifs/ocean.gif")}
-              alt="gif of animated ocean"
-              style={{ visibility: { gif }, width: "100%" }}
-            />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.5} speed={1}>
@@ -308,6 +306,9 @@ function App() {
               </div>
             </div>
           </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={4.5} speed={0}>
+          <MyForm />
         </ParallaxLayer>
       </Parallax>
       <div className={`skills ${skills}`} onMouseEnter={() => skillsShow()}>

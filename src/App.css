@@ -167,3 +167,12 @@ td {
 h2 {
   text-shadow: 2px 2px 2px #888;
 }
+
+/* .gif {
+  width: 100vw;
+  display: flex;
+} */
+
+.hide {
+  display: none;
+}
