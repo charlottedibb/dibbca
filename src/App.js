@@ -24,8 +24,8 @@ import {
 } from "react-icons/fa";
 
 function App() {
-  const [video, showVideo] = useState("none");
-  const [image, showImage] = useState("");
+  const [video, showVideo] = useState("video-hide");
+  const [image, showImage] = useState("hero-image");
   const [skills, updateSkills] = useState("hide");
   const [project, updateProject] = useState({
     js: "off",
@@ -129,24 +129,24 @@ function App() {
     updateSkills("hide");
   };
 
-  useEffect(() => {
-    showVideo("block");
-    showImage("none");
-  }, []);
+  const hideImage = function() {
+    showVideo("video-show");
+    console.log("inside hide image")
+    showImage("hero-image-hide")
+  }
 
   return (
     <div className="App">
       <Parallax pages={5} style={{ background: "#1e1354" }}>
         <ParallaxLayer offset={0} speed={0}>
           <div className="hero-vid-container">
-            <div style={{ display: video }}>
-              <video className="hero-vid" autoPlay loop muted>
+            <div className={video}>
+              <video className="hero-vid" autoPlay loop muted onCanPlayThrough={hideImage}>
                 <source src={ocean} type="video/mp4" />
               </video>
             </div>
             <img
-              className="hero-image"
-              style={{ display: image }}
+              className={image}
               src={require("./images/ocean_still.png")}
               alt="blue ocean with pink sun"
             />

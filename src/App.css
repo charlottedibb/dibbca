@@ -7,6 +7,15 @@
   display: flex;
   align-items: center;
   height: 100vh;
+  width: 100%;
+}
+
+.video-hide {
+  display: none;
+}
+
+.video-show {
+  display: flex;
 }
 
 .hero-vid {
@@ -15,6 +24,10 @@
 
 .hero-image {
   width: 100%;
+}
+
+.hero-image-hide {
+  display: none;
 }
 
 .angle {
