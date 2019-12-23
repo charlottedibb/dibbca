@@ -6,6 +6,7 @@ import "./landing.css";
 import "./projects.css";
 import "./skills.css";
 import ocean from "./ocean_tall.mp4";
+import oceanSmall from "./ocean_small.mp4";
 import {
   FaAngleDoubleDown,
   FaBootstrap,
@@ -24,8 +25,8 @@ import {
 } from "react-icons/fa";
 
 function App() {
-  const [video, updateVideo] = useState("hidden");
-  const [gif, updateGif] = useState("");
+  const [video, showVideo] = useState("none");
+  const [smallVideo, showSmallVideo] = useState("block");
   const [skills, updateSkills] = useState("hide");
   const [project, updateProject] = useState({
     js: "off",
@@ -121,36 +122,36 @@ function App() {
     }
   };
 
-  
   const skillsShow = function() {
     updateSkills("show");
   };
-  
+
   const skillsHide = function() {
     updateSkills("hide");
   };
-  
+
   useEffect(() => {
-    console.log("in the useeffect")
-    updateVideo("visible");
-    updateGif("hide");
+    console.log("in the useeffect");
+    showVideo("block");
+    showSmallVideo("none");
+
   }, []);
 
   return (
     <div className="App">
       <Parallax pages={5} style={{ background: "#fda4ff" }}>
         <ParallaxLayer offset={0} speed={0}>
-          <img
-            // src={require("./gifs/ocean.gif")}
-            src={require("./gifs/edit.gif")}
-            alt="gif of animated ocean"
-            style={{ width: "100vw"}}
-            className={gif}
-          />
-          <div className="hero-vid-container" style={{ visibility: { video } }}>
-            <video className="hero-vid" autoPlay loop muted>
-              <source src={ocean} type="video/mp4" />
-            </video>
+          <div className="hero-vid-container">
+            <div style={{ display: smallVideo }}>
+              <video className="hero-vid" autoPlay loop muted>
+                <source src={oceanSmall} type="video/mp4" />
+              </video>
+            </div>
+            <div style={{ display: video }}>
+              <video className="hero-vid" autoPlay loop muted>
+                <source src={ocean} type="video/mp4" />
+              </video>
+            </div>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.5} speed={1}>
@@ -182,12 +183,16 @@ function App() {
           <div className="info">
             <p className="summary">
               I’m a McGill University psychology grad with a past life in Human
-              Resources. Seeking new and more interesting challenges, I took the
-              leap into programming and web development. I love making
-              beautiful, robust UIs for broad audiences, solving tricky
-              problems, and seeing my applications come to life. Aside from
-              coding, I enjoy cross stitching, creating 3D images and animations
-              in Blender, and reading sci-fi novels.
+              Resources.
+              <br />
+              Seeking new and more interesting challenges, I took the leap into
+              programming and web development.
+              <br />
+              I love making beautiful, robust UIs for broad audiences, solving
+              tricky problems, and seeing my applications come to life.
+              <br />
+              Aside from coding, I enjoy cross stitching, creating 3D images and
+              animations in Blender, and reading sci-fi novels.
             </p>
           </div>
         </ParallaxLayer>
