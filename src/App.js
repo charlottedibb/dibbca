@@ -6,7 +6,6 @@ import "./landing.css";
 import "./projects.css";
 import "./skills.css";
 import ocean from "./ocean_tall.mp4";
-import oceanSmall from "./ocean_small.mp4";
 import {
   FaAngleDoubleDown,
   FaBootstrap,
@@ -26,7 +25,7 @@ import {
 
 function App() {
   const [video, showVideo] = useState("none");
-  const [smallVideo, showSmallVideo] = useState("block");
+  const [image, showImage] = useState("");
   const [skills, updateSkills] = useState("hide");
   const [project, updateProject] = useState({
     js: "off",
@@ -131,27 +130,26 @@ function App() {
   };
 
   useEffect(() => {
-    console.log("in the useeffect");
     showVideo("block");
-    showSmallVideo("none");
-
+    showImage("none");
   }, []);
 
   return (
     <div className="App">
-      <Parallax pages={5} style={{ background: "#fda4ff" }}>
+      <Parallax pages={5} style={{ background: "#1e1354" }}>
         <ParallaxLayer offset={0} speed={0}>
           <div className="hero-vid-container">
-            <div style={{ display: smallVideo }}>
-              <video className="hero-vid" autoPlay loop muted>
-                <source src={oceanSmall} type="video/mp4" />
-              </video>
-            </div>
             <div style={{ display: video }}>
               <video className="hero-vid" autoPlay loop muted>
                 <source src={ocean} type="video/mp4" />
               </video>
             </div>
+            <img
+              className="hero-image"
+              style={{ display: image }}
+              src={require("./images/ocean_still.png")}
+              alt="blue ocean with pink sun"
+            />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.5} speed={1}>

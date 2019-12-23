@@ -13,6 +13,10 @@
   width: 100%;
 }
 
+.hero-image {
+  width: 100%;
+}
+
 .angle {
   height: 500px;
   background-color: #f157f4;
@@ -135,7 +139,7 @@
 }
 
 .info > p {
-  width: 50%;
+  width: 70%;
 }
 
 table {
