@@ -5,7 +5,7 @@ import "./App.css";
 import "./landing.css";
 import "./projects.css";
 import "./skills.css";
-import ocean from "./ocean_medium.mp4";
+import ocean from "./ocean_tall.mp4";
 import {
   FaAngleDoubleDown,
   FaBootstrap,
@@ -131,9 +131,9 @@ function App() {
 
   const hideImage = function() {
     showVideo("video-show");
-    console.log("inside hide image")
-    showImage("hero-image-hide")
-  }
+    console.log("inside hide image");
+    showImage("hero-image-hide");
+  };
 
   const isMobile = window.innerWidth <= 500;
 
@@ -143,13 +143,19 @@ function App() {
         <ParallaxLayer offset={0} speed={0}>
           <div className="hero-vid-container">
             <div className={video}>
-              <video className="hero-vid" autoPlay loop muted onCanPlayThrough={hideImage}>
+              <video
+                className="hero-vid"
+                autoPlay
+                loop
+                muted
+                onCanPlayThrough={hideImage}
+              >
                 <source src={ocean} type="video/mp4" />
               </video>
             </div>
             <img
               className={image}
-              src={require("./images/ocean_2_still.png")}
+              src={require("./images/ocean_still.png")}
               alt="blue ocean with pink sun"
             />
           </div>
@@ -160,16 +166,22 @@ function App() {
             <FaAngleDoubleDown className="bounce" size={30} color="white" />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.2} speed={0}>
-          <video
-            className="upside-down"
-            autoPlay
-            loop
-            muted
-            style={{ width: "100vw" }}
-          >
-            <source src={ocean} type="video/mp4" />
-          </video>
+        <ParallaxLayer offset={1.5} speed={0}>
+          <div className={video}>
+            <video
+              className="upside-down"
+              autoPlay
+              loop
+              muted
+            >
+              <source src={ocean} type="video/mp4" />
+            </video>
+            <img
+              className={image}
+              src={require("./images/ocean_still.png")}
+              alt="blue ocean with pink sun"
+            />
+          </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.99} speed={0.3}>
           <div className="angle">
@@ -196,7 +208,7 @@ function App() {
             </p>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.75} speed={0.3}>
+        <ParallaxLayer offset={2.4} speed={0.3}>
           <div className="projects-divider">
             <div
               className="projects"
