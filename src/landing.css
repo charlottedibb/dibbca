@@ -1,73 +1,15 @@
-/* heading animation */
-/* h1 {
-  color: transparent;
-  text-decoration: none;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  text-align: center;
-  font-size: 3em;
-  margin: 20px 0 50px 0;
-  font-family: "Nunito Sans", sans-serif;
-} */
-
-h1.glowOn {
+h1 {
   font-size: 3em;
   margin: 20px 0 50px 0;
   font-family: "Nunito Sans", sans-serif;
   color: #ffffff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
-      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
-  /* -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate; */
-}
-
-@-webkit-keyframes neon6 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
-      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
-      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
-  }
-}
-
-@keyframes neon6 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
-      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
-      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
-  }
-}
-
-@-webkit-keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fa70e8, 0 0 70px #fa70e8, 0 0 80px #fa70e8, 0 0 100px #fa70e8, 0 0 150px #fa70e8;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fa70e8, 0 0 35px #fa70e8, 0 0 40px #fa70e8, 0 0 50px #fa70e8, 0 0 75px #fa70e8;
-  }
-}
-
-@keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fa70e8, 0 0 70px #fa70e8, 0 0 80px #fa70e8, 0 0 100px #fa70e8, 0 0 150px #fa70e8;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fa70e8, 0 0 35px #fa70e8, 0 0 40px #fa70e8, 0 0 50px #fa70e8, 0 0 75px #fa70e8;
-  }
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff
 }
 
 /* arrow animation */
 .bounce {
   animation: bounce 2s infinite;
   filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff)
-    drop-shadow(0 0 15px #fff)
 }
 
 @keyframes bounce {
