@@ -5,7 +5,7 @@ import "./App.css";
 import "./landing.css";
 import "./projects.css";
 import "./skills.css";
-import ocean from "./ocean_tall.mp4";
+import ocean from "./ocean_medium.mp4";
 import {
   FaAngleDoubleDown,
   FaBootstrap,
@@ -135,6 +135,8 @@ function App() {
     showImage("hero-image-hide")
   }
 
+  const isMobile = window.innerWidth <= 500;
+
   return (
     <div className="App">
       <Parallax pages={5} style={{ background: "#1e1354" }}>
@@ -147,7 +149,7 @@ function App() {
             </div>
             <img
               className={image}
-              src={require("./images/ocean_still.png")}
+              src={require("./images/ocean_2_still.png")}
               alt="blue ocean with pink sun"
             />
           </div>
