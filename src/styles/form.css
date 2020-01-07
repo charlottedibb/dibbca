@@ -1,0 +1,51 @@
+.form-container {
+  height: 70vh;
+  background-color: #FA73FF;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container:before {
+  background: inherit;
+  top: 0;
+  content: "";
+  display: block;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 0;
+  z-index: -1;
+  box-shadow: 0 -10px 10px -10px #0e053c;
+}
+
+.form-container:after {
+  background: inherit;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(1.5deg);
+  transform-origin: 0;
+  z-index: -1;
+  box-shadow: 0 5px 5px #0e053c;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+}
