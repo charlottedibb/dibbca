@@ -41,13 +41,39 @@
 
 form {
   height: 100%;
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .form-group {
   display: flex;
+  flex-direction: column;
   padding-bottom: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+input[name="email"] {
+  height: 20px;
+}
+
+input[name="message"] {
+  height: 50px;
+}
+
+button.submit {
+  width: 40%;
+}
+
+label {
+  padding-bottom: 5px;
 }

@@ -23,14 +23,14 @@ export default class MyForm extends React.Component {
       >
         <h1>Contact me.</h1>
         <div className="form-group">
-          <label>Email:</label>
+          <label>Email</label>
           <input type="email" name="email" />
         </div>
         <div className="form-group">
-          <label>Message:</label>
+          <label>Message</label>
           <input type="text" name="message" />
         </div>
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button className="submit">Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
     );
