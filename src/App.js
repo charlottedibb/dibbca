@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import MyForm from "./myform.js";
-import "./App.css";
-import "./landing.css";
-import "./projects.css";
-import "./skills.css";
-import ocean from "./ocean_tall.mp4";
+import "./styles/App.css";
+import "./styles/landing.css";
+import "./styles/projects.css";
+import "./styles/skills.css";
+import "./styles/form.css";
+import ocean from "./videos/ocean_tall.mp4";
 import {
   FaAngleDoubleDown,
   FaBootstrap,
@@ -139,7 +140,7 @@ function App() {
 
   return (
     <div className="App">
-      <Parallax pages={5} style={{ background: "#1e1354" }}>
+      <Parallax pages={5.3} style={{ background: "#1e1354" }}>
         <ParallaxLayer offset={0} speed={0}>
           <div className="hero-vid-container">
             <div className={video}>
@@ -168,12 +169,7 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={1.5} speed={0}>
           <div className={video}>
-            <video
-              className="upside-down"
-              autoPlay
-              loop
-              muted
-            >
+            <video className="upside-down" autoPlay loop muted>
               <source src={ocean} type="video/mp4" />
             </video>
             <img
@@ -324,11 +320,14 @@ function App() {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.5} speed={0}>
-          <MyForm />
+        <ParallaxLayer offset={4.6} speed={0}>
+          <div className="form-container">
+            <MyForm />
+          </div>
         </ParallaxLayer>
       </Parallax>
       <div className={`skills ${skills}`} onMouseEnter={() => skillsShow()}>
+        <h3>Tech Stack</h3>
         <div className={`skill-container ${project.js}`}>
           <FaJsSquare size={35} />
           JavaScript
