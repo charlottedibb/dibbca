@@ -292,9 +292,7 @@ function App() {
                   <h2>Jungle</h2>
                   <p>
                     Jungle is a mini e-commerce application built with Rails
-                    4.2.
-                    <br />
-                    PostgreSQL, Stripe, Bootstrap
+                    4.2, PostgreSQL, Stripe, and Bootstrap
                   </p>
                 </div>
               </div>
@@ -327,53 +325,53 @@ function App() {
         </ParallaxLayer>
       </Parallax>
       <div className={`skills ${skills}`} onMouseEnter={() => skillsShow()}>
-        <h3>Tech Stack</h3>
+        <h3>Skills</h3>
         <div className={`skill-container ${project.js}`}>
-          <FaJsSquare size={35} />
+          <FaJsSquare size={30} />
           JavaScript
         </div>
         <div className={`skill-container ${project.ruby}`}>
-          <FaGem size={35} />
+          <FaGem size={30} />
           Ruby
         </div>
         <div className={`skill-container ${project.html}`}>
-          <FaHtml5 size={35} />
+          <FaHtml5 size={30} />
           HTML
         </div>
         <div className={`skill-container ${project.css}`}>
-          <FaCss3Alt size={35} />
+          <FaCss3Alt size={30} />
           CSS
         </div>
         <div className={`skill-container ${project.bootStrap}`}>
-          <FaBootstrap size={35} />
+          <FaBootstrap size={30} />
           Bootstrap
         </div>
         <div className={`skill-container ${project.react}`}>
-          <FaReact size={35} />
+          <FaReact size={30} />
           ReactJs
         </div>
         <div className={`skill-container ${project.postgres}`}>
-          <FaDatabase size={35} />
+          <FaDatabase size={30} />
           PostgreSQL
         </div>
         <div className={`skill-container ${project.mongo}`}>
-          <FaLeaf size={35} />
+          <FaLeaf size={30} />
           MongoDB
         </div>
         <div className={`skill-container ${project.git}`}>
-          <FaGitAlt size={35} />
+          <FaGitAlt size={30} />
           Git
         </div>
         <div className={`skill-container ${project.node}`}>
-          <FaNode size={35} />
+          <FaNode size={30} />
           NodeJs
         </div>
         <div className={`skill-container ${project.stripe}`}>
-          <FaCcStripe size={35} />
+          <FaCcStripe size={30} />
           Stripe
         </div>
         <div className={`skill-container ${project.twilio}`}>
-          <FaSms size={35} />
+          <FaSms size={30} />
           Twilio
         </div>
       </div>
