@@ -204,14 +204,14 @@ function App() {
             </p>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.4} speed={0.3}>
+        <ParallaxLayer offset={2.2} speed={0.3}>
+          <h2 className="projects-header">Projects</h2>
           <div className="projects-divider">
             <div
               className="projects"
               onMouseEnter={() => skillsShow()}
               onMouseLeave={() => skillsHide()}
             >
-              <h2 className="projects-header">Projects</h2>
               <div
                 className="project-card"
                 onMouseEnter={() => mouseEnter("xstitch")}
