@@ -1,4 +1,10 @@
 import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import MyForm from "./myform.js";
 import "./styles/App.css";
@@ -25,7 +31,34 @@ import {
   FaLinkedin
 } from "react-icons/fa";
 
-function App() {
+
+export default function App() {
+  return (
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/resume">
+            <Resume />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+function Resume() {
+  return (
+    <div>
+      <h2>Hi i'm a resume</h2>
+      <Link to="/">Back to homepage</Link>
+    </div>
+  )
+}
+
+function Home() {
   const [video, showVideo] = useState("video-hide");
   const [image, showImage] = useState("hero-image");
   const [skills, updateSkills] = useState("hide");
@@ -137,7 +170,7 @@ function App() {
     showImage("hero-image-hide");
   };
 
-  const isMobile = window.innerWidth <= 500;
+  // const isMobile = window.innerWidth <= 500;
 
   return (
     <div className="App">
@@ -330,6 +363,9 @@ function App() {
                 <FaLinkedin size={35} />
                 <p>LinkedIn</p>
               </a>
+              <li>
+              <Link to="/resume">Resume</Link>
+            </li>
             </div>
           </div>
         </ParallaxLayer>
@@ -388,5 +424,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
