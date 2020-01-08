@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import MyForm from "./myform.js";
 import "./styles/App.css";
@@ -28,9 +23,9 @@ import {
   // FaServer,
   FaCcStripe,
   FaSms,
-  FaLinkedin
+  FaLinkedin,
+  FaFileAlt
 } from "react-icons/fa";
-
 
 export default function App() {
   return (
@@ -55,7 +50,7 @@ function Resume() {
       <h2>Hi i'm a resume</h2>
       <Link to="/">Back to homepage</Link>
     </div>
-  )
+  );
 }
 
 function Home() {
@@ -355,17 +350,28 @@ function Home() {
           <div className="contact-container">
             <MyForm />
             <div className="social">
-              <a href="https://github.com/charcharmasonjar" rel="noopener noreferrer" target="_blank" className="social-link">
+              <a
+                href="https://github.com/charcharmasonjar"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="social-link"
+              >
                 <FaGitAlt size={35} />
                 <p>Github</p>
               </a>
-              <a href="https://www.linkedin.com/in/dibb/" rel="noopener noreferrer" target="_blank" className="social-link">
+              <a
+                href="https://www.linkedin.com/in/dibb/"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="social-link"
+              >
                 <FaLinkedin size={35} />
                 <p>LinkedIn</p>
               </a>
-              <li>
-              <Link to="/resume">Resume</Link>
-            </li>
+              <Link to="/resume">
+                <FaFileAlt size={30} />
+                <p>Resume</p>
+              </Link>
             </div>
           </div>
         </ParallaxLayer>

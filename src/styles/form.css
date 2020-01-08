@@ -79,9 +79,10 @@ label {
 }
 
 .social {
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
   color: white;
   font-size: 0.8em;
 }
