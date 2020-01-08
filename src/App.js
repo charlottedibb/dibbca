@@ -21,7 +21,8 @@ import {
   FaReact,
   // FaServer,
   FaCcStripe,
-  FaSms
+  FaSms,
+  FaLinkedin
 } from "react-icons/fa";
 
 function App() {
@@ -132,7 +133,7 @@ function App() {
 
   const hideImage = function() {
     showVideo("video-show");
-    console.log("inside hide image");
+    // console.log("inside hide image");
     showImage("hero-image-hide");
   };
 
@@ -228,8 +229,7 @@ function App() {
                     A cross-stitch pattern creating app with version history.
                     Users can create patterns, return to previous saved
                     versions, and generate pdfs to print out their patterns.
-                    Built with React and Rails. ReactJS, Ruby on Rails, JS,
-                    PostgreSQL, Axios
+                    Built with React, Ruby on Rails, JS, PostgreSQL, and Axios.
                   </p>
                 </div>
               </div>
@@ -319,8 +319,16 @@ function App() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={4.6} speed={0}>
-          <div className="form-container">
+          <div className="contact-container">
             <MyForm />
+            <div className="social">
+              <a href="https://github.com/charcharmasonjar">
+                <FaGitAlt size={35} />
+              </a>
+              <a href="https://www.linkedin.com/in/dibb/">
+                <FaLinkedin size={35} />
+              </a>
+            </div>
           </div>
         </ParallaxLayer>
       </Parallax>
