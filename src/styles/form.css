@@ -83,4 +83,21 @@ label {
   display: flex;
   justify-content: space-around;
   color: white;
+  font-size: 0.8em;
 }
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

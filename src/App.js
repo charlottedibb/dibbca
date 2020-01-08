@@ -322,11 +322,13 @@ function App() {
           <div className="contact-container">
             <MyForm />
             <div className="social">
-              <a href="https://github.com/charcharmasonjar">
+              <a href="https://github.com/charcharmasonjar" rel="noopener noreferrer" target="_blank" className="social-link">
                 <FaGitAlt size={35} />
+                <p>Github</p>
               </a>
-              <a href="https://www.linkedin.com/in/dibb/">
+              <a href="https://www.linkedin.com/in/dibb/" rel="noopener noreferrer" target="_blank" className="social-link">
                 <FaLinkedin size={35} />
+                <p>LinkedIn</p>
               </a>
             </div>
           </div>
