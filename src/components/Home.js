@@ -339,10 +339,10 @@ export default function Home() {
                 <FaLinkedin size={35} />
                 <p>LinkedIn</p>
               </a>
-              <a href="/resume">
+              {/* <a href="/resume">
                 <FaFileAlt size={30} />
                 <p>Resume</p>
-              </a>
+              </a> */}
             </div>
           </div>
         </ParallaxLayer>
