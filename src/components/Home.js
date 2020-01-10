@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-// import { Document, Page, pdfjs } from "react-pdf";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import MyForm from "./myform.js";
 import ocean from "../videos/ocean_tall.mp4";
@@ -343,6 +341,10 @@ export default function Home() {
                 <FaFileAlt size={30} />
                 <p>Resume</p>
               </a> */}
+              <Link to="/resume">
+                <FaFileAlt size={30} />
+                <p>Resume</p>
+              </Link>
             </div>
           </div>
         </ParallaxLayer>

@@ -1,6 +1,8 @@
 import React from "react";
 import resumeImg from "../images/Resume.png"
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { Document, Page, pdfjs } from "react-pdf";
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 export default function Resume() {
   return (
     <div>
@@ -12,8 +14,7 @@ export default function Resume() {
         // file="/CharlotteDibbResume.pdf"
         // onLoadSuccess={this.onDocumentLoadSuccess}
       ></Document> */}
-      <a href="/">Back to homepage</a>
-      {/* <Link to={`${match.url}`}>Back to homepage</Link> */}
+      <Link to="/">Back to homepage</Link>
     </div>
   );
 }
