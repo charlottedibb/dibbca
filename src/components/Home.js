@@ -180,7 +180,7 @@ export default function Home() {
         <ParallaxLayer offset={0.99} speed={0.3}>
           <div className="angle">
             <h2>
-              I'm Charlotte. I'm a fullstack web developer based in Vancouver,
+              I'm Charlotte. I'm a full stack web developer based in Vancouver,
               BC.
             </h2>
           </div>
@@ -337,10 +337,6 @@ export default function Home() {
                 <FaLinkedin size={35} />
                 <p>LinkedIn</p>
               </a>
-              {/* <a href="/resume">
-                <FaFileAlt size={30} />
-                <p>Resume</p>
-              </a> */}
               <Link to="/resume">
                 <FaFileAlt size={30} />
                 <p>Resume</p>
