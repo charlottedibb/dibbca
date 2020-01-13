@@ -24,9 +24,13 @@ export default class MyForm extends React.Component {
         </div>
         <div className="form-group">
           <label>Message</label>
-          <input type="text" name="message" />
+          <textarea name="message" rows="4"></textarea>
         </div>
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button className="submit">Submit</button>}
+        {status === "SUCCESS" ? (
+          <p>Thanks!</p>
+        ) : (
+          <button className="submit">Send Message</button>
+        )}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
     );
