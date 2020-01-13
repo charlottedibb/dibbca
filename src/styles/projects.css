@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
 }
+
 .projects-divider:before {
   background: inherit;
   top: 0;
@@ -87,7 +88,7 @@
 
 @media only screen and (max-width: 1000px) {
   .projects {
-    padding: 0px;
+    padding: 0px 100px 0px 50px;
   }
 
   .project-card {
@@ -98,5 +99,16 @@
   .project-description {
     padding-left: 0px;
     font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .projects {
+    padding: 0px;
+  }
+
+  .project-title-gif > img {
+    width: 90%;
   }
 }
