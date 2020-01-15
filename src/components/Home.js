@@ -138,7 +138,7 @@ export default function Home() {
 
   return (
     <div className="App">
-      <Parallax pages={5.3} style={{ background: "#1e1354" }}>
+      <Parallax pages={5.6} style={{ background: "#1e1354" }}>
         <ParallaxLayer offset={0} speed={0}>
           <div className="hero-vid-container">
             <div className={video}>
@@ -315,7 +315,7 @@ export default function Home() {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.6} speed={0}>
+        <ParallaxLayer offset={4.7} speed={0}>
           <div className="contact-container">
             <MyForm />
             <div className="social">
