@@ -127,7 +127,7 @@ video {
 
 .info > p {
   padding: 30px;
-  /* width: 70%; */
+  line-height: 1.5;
 }
 
 table {
