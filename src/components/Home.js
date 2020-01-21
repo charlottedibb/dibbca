@@ -250,8 +250,7 @@ export default function Home() {
                     ready for pickup.
                     <br />
                     Front-end built using HTML/CSS/Bootstrap, Javascript, AJAX.
-                    Back-end was built using Node.js, Express, and PostreSQL
-                    <br />
+                    Back-end was built using Node.js, Express, and PostreSQL.
                     Twilio API was used for sending text messages.
                   </p>
                 </div>
