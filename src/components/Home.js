@@ -226,7 +226,7 @@ export default function Home() {
                     A cross-stitch pattern creating app with version history.
                     Users can create patterns, return to previous saved
                     versions, and generate pdfs to print out their patterns.
-                    Built with React, Ruby on Rails, JS, PostgreSQL, and Axios.
+                    Built with React, Ruby on Rails, PostgreSQL, and Axios.
                   </p>
                 </div>
               </div>
