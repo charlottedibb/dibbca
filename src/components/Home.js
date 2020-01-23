@@ -270,7 +270,7 @@ export default function Home() {
                   <p>
                     Tweeter is a simple, single-page Twitter clone. Front end
                     was built with HTML, CSS, JS, jQuery and AJAX. Back end was
-                    built using Node, Express and MongoDB.
+                    built using Node and Express.
                   </p>
                 </div>
               </div>
