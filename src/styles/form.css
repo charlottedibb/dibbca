@@ -75,9 +75,16 @@ textarea {
 
 button.submit {
   font-weight: 500;
-  height: 1.5rem;
+  font-size: 0.9rem;
+  height: 2.0rem;
   width: 150px;
   border-radius: 0.25rem;
+  background-color: white;
+  color: #eb55ed;
+}
+
+button.submit:hover {
+  box-shadow: 3px 3px 3px #eb55ed
 }
 
 label {
