@@ -1,0 +1,16 @@
+.resume {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a.resume {
+  width: 100%;
+  background-color: #39827A;
+  text-align: center;
+  padding: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}

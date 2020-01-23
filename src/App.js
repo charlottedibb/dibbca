@@ -7,6 +7,7 @@ import "./styles/landing.css";
 import "./styles/projects.css";
 import "./styles/skills.css";
 import "./styles/form.css";
+import "./styles/resume.css"
 
 export default function App() {
   return (

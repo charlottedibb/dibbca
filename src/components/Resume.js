@@ -7,11 +7,11 @@ import 'react-pdf/dist/Page/AnnotationLayer.css';
 export default function Resume() {
 
   return (
-    <div>
+    <div className="resume">
       <Document file={resumePDF}>
         <Page pageNumber={1} />
       </Document>
-      <Link to="/">Back to homepage</Link>
+      <Link to="/" className="resume">Back to homepage</Link>
     </div>
   );
 }
