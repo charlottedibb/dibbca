@@ -130,14 +130,14 @@ video {
   line-height: 1.5;
 }
 
-table {
-  width: 600px;
-  text-align: center;
-  vertical-align: middle;
-  box-shadow: 0 0 5px #0b0332;
-  background-color: #1c0a74;
-}
-
 .hide {
   display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .info > p {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 100px;
+  }
 }
