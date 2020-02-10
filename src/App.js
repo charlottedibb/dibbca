@@ -9,6 +9,7 @@ import {
 import Media from "react-media";
 import Home from "./components/Home.js";
 import Resume from "./components/Resume.js";
+import Mobile from "./components/Mobile"
 import "./styles/App.css";
 import "./styles/landing.css";
 import "./styles/projects.css";
@@ -25,7 +26,7 @@ export default function App() {
             <Resume />
           </Route>
           <Route path="/mobile">
-            <div>hey i'm mobiiile</div>
+            <Mobile />
           </Route>
           <Route exact path="/">
             <Media query={{ maxWidth: 599 }}>
