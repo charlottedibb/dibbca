@@ -4,6 +4,9 @@ import MyForm from "./myform.js";
 import {
   FaAngleDoubleDown,
   FaGitAlt,
+  FaRegHeart,
+  FaHistory,
+  FaLaptopCode,
   FaLinkedin,
   FaFileAlt
 } from "react-icons/fa";
@@ -30,19 +33,37 @@ export default function Mobile() {
         </h2>
       </div>
       <div className="info-mobile">
-        <p className="summary">
-          I’m a McGill University psychology grad with a past life in Human
-          Resources. Seeking new and more interesting challenges, I took the
-          leap into programming and web development.
-          <br />
-          <br />
-          I love making beautiful, robust UIs for broad audiences, solving
-          tricky problems, and seeing my applications come to life.
-          <br />
-          <br />
-          Aside from coding, I enjoy cross stitching, creating 3D images and
-          animations in Blender, and reading sci-fi novels.
-        </p>
+        <div className="summary-mobile">
+          <div className="summary-icons-mobile">
+            <FaHistory size={38} />
+            <div className="vlm"></div>
+            <FaLaptopCode size={40} />
+            <div className="vlm"></div>
+            <FaRegHeart size={40} />
+          </div>
+          <div className="summary-text-mobile">
+            <div>
+              <p>
+                I’m a McGill University psychology grad with a past life in
+                Human Resources.
+                Seeking new and more interesting challenges, I took the leap
+                into programming and web development.
+              </p>
+            </div>
+            <div>
+              <p>
+                I love making beautiful, robust UIs for broad audiences, solving
+                tricky problems, and seeing my applications come to life.
+              </p>
+            </div>
+            <div>
+              <p>
+                Aside from coding, I enjoy cross stitching, creating 3D images
+                and animations in Blender, and reading sci-fi novels.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <h2 className="projects-header">Projects</h2>
       <div className="projects-divider">
