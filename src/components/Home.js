@@ -130,15 +130,12 @@ export default function Home() {
 
   const hideImage = function() {
     showVideo("video-show");
-    // console.log("inside hide image");
     showImage("hero-image-hide");
   };
 
-  // const isMobile = window.innerWidth <= 500;
-
   return (
     <div className="App">
-      <Parallax pages={5.6} style={{ background: "#1e1354" }}>
+      <Parallax pages={5.3} style={{ background: "#1e1354" }}>
         <ParallaxLayer offset={0} speed={0}>
           <div className="hero-vid-container">
             <div className={video}>
@@ -165,7 +162,7 @@ export default function Home() {
             <FaAngleDoubleDown className="bounce" size={30} color="white" />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.5} speed={0}>
+        <ParallaxLayer offset={1.4} speed={0}>
           <div className={video}>
             <video className="upside-down" autoPlay loop muted>
               <source src={ocean} type="video/mp4" />
@@ -200,7 +197,7 @@ export default function Home() {
             </p>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.2} speed={0.3}>
+        <ParallaxLayer offset={2} speed={0.3}>
           <h2 className="projects-header">Projects</h2>
           <div className="projects-divider">
             <div
@@ -312,7 +309,7 @@ export default function Home() {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.7} speed={0}>
+        <ParallaxLayer offset={4.5} speed={0}>
           <div className="contact-container">
             <MyForm />
             <div className="social">

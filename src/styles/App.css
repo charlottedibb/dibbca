@@ -44,7 +44,7 @@ video {
 }
 
 .angle {
-  height: 50vh;
+  height: 30vh;
   background-color: #f157f4;
   color: #fff;
   position: relative;
@@ -85,7 +85,7 @@ video {
 }
 
 .info {
-  height: 60vh;
+  height: 50vh;
   background-color: #1e1354;
   color: #fff;
   position: relative;
