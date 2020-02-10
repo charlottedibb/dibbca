@@ -55,8 +55,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  padding: 75px 50px;
+  padding: 60px 50px;
 }
 
 .project-card:hover {
@@ -96,8 +95,8 @@
   }
 
   .project-description {
-    padding-left: 0px;
-    font-size: 0.9em;
+    padding: 20px;
+    line-height: 1.2
   }
 }
 
