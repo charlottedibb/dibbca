@@ -16,6 +16,7 @@ import "./styles/projects.css";
 import "./styles/skills.css";
 import "./styles/form.css";
 import "./styles/resume.css";
+import "./styles/summary.css"
 
 export default function App() {
   return (
