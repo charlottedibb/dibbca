@@ -6,16 +6,19 @@ import ocean from "../videos/ocean_tall.mp4";
 import {
   FaAngleDoubleDown,
   FaBootstrap,
+  FaCode,
   FaCss3Alt,
   FaDatabase,
   FaGem,
   FaGitAlt,
+  FaRegHeart,
+  FaHistory,
   FaHtml5,
   FaJsSquare,
+  FaLaptopCode,
   FaLeaf,
   FaNode,
   FaReact,
-  // FaServer,
   FaCcStripe,
   FaSms,
   FaLinkedin,
@@ -184,17 +187,41 @@ export default function Home() {
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.2}>
           <div className="info">
-            <p className="summary">
-              I’m a McGill University psychology grad with a past life in Human
-              Resources. Seeking new and more interesting challenges, I took the leap into
-              programming and web development.
-              <br />
-              I love making beautiful, robust UIs for broad audiences, solving
-              tricky problems, and seeing my applications come to life.
-              <br />
-              Aside from coding, I enjoy cross stitching, creating 3D images and
-              animations in Blender, and reading sci-fi novels.
-            </p>
+            <div className="summary">
+              <div className="summary-icons">
+                <FaHistory size={38} />
+                <div className="vl"></div>
+                <FaLaptopCode size={40} />
+                <div className="vl"></div>
+                <FaRegHeart size={40} />
+              </div>
+              <div className="summary-text">
+                <div>
+                  <p>
+                    I’m a McGill University psychology grad with a past life in
+                    Human Resources.
+                    <br />
+                    Seeking new and more interesting challenges, I took the leap
+                    into programming and web development.
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    I love making beautiful, robust UIs for broad audiences,
+                    solving tricky problems, and seeing my applications come to
+                    life.
+                    <br />
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Aside from coding, I enjoy cross stitching, creating 3D
+                    images and animations in Blender, and reading sci-fi novels.
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={2} speed={0.3}>
