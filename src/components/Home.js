@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import MyForm from "./myform.js";
 import ocean from "../videos/ocean_tall.mp4";
