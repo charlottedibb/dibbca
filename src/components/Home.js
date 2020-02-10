@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import MyForm from "./myform.js";
 import ocean from "../videos/ocean_tall.mp4";
@@ -189,9 +189,7 @@ export default function Home() {
           <div className="info">
             <p className="summary">
               I’m a McGill University psychology grad with a past life in Human
-              Resources.
-              <br />
-              Seeking new and more interesting challenges, I took the leap into
+              Resources. Seeking new and more interesting challenges, I took the leap into
               programming and web development.
               <br />
               I love making beautiful, robust UIs for broad audiences, solving
