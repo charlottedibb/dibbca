@@ -8,38 +8,37 @@ import {
   FaFileAlt
 } from "react-icons/fa";
 
+import "../styles/mobile.css";
+
 export default function Mobile() {
   return (
     <div className="App">
-      <div className="hero-vid-container">
+      <div className="hero-mobile">
         <img
           className="hero-image"
           src={require("../images/ocean_still.png")}
           alt="blue ocean with pink sun"
         />
+        <div className="hero-mobile-container">
+          <h1 className="glowOn">Hey</h1>
+          <FaAngleDoubleDown className="bounce" size={30} color="white" />
+        </div>
       </div>
-      <div className="container">
-        <h1 className="glowOn">Hey</h1>
-        <FaAngleDoubleDown className="bounce" size={30} color="white" />
-      </div>
-      <img
-        className="hero-image"
-        src={require("../images/ocean_still.png")}
-        alt="blue ocean with pink sun"
-      />
-      <div className="angle">
+      <div className="angle-mobile">
         <h2>
           I'm Charlotte. I'm a full stack web developer based in Vancouver, BC.
         </h2>
       </div>
-      <div className="info">
+      <div className="info-mobile">
         <p className="summary">
           I’m a McGill University psychology grad with a past life in Human
           Resources. Seeking new and more interesting challenges, I took the
           leap into programming and web development.
           <br />
+          <br />
           I love making beautiful, robust UIs for broad audiences, solving
           tricky problems, and seeing my applications come to life.
+          <br />
           <br />
           Aside from coding, I enjoy cross stitching, creating 3D images and
           animations in Blender, and reading sci-fi novels.
