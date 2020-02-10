@@ -56,7 +56,7 @@
 }
 
 .info-mobile {
-  height: 400px;
+  height: 500px;
   background-color: #1e1354;
   color: #fff;
   position: relative;
@@ -100,5 +100,42 @@
 .info-mobile > p {
   padding: 10px;
   line-height: 1.5;
+}
+
+.summary-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.summary-icons-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-text-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  text-align: left;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+p {
+  margin: 0
+}
+
+.vlm {
+  border-left: 1px solid white;
+  height: 50px;
 }
 
