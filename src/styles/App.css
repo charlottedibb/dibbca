@@ -133,11 +133,3 @@ video {
 .hide {
   display: none;
 }
-
-@media only screen and (min-width: 1000px) {
-  .info > p {
-    font-size: 1.2rem;
-    text-align: left;
-    padding: 100px;
-  }
-}
