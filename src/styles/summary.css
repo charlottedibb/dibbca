@@ -1,0 +1,33 @@
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.summary-icons {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-text {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 250px;
+  text-align: left;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0
+}
+
+.vl {
+  border-left: 1px solid white;
+  height: 30px;
+}
