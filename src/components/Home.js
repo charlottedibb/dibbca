@@ -225,13 +225,13 @@ export default function Home() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={2} speed={0.3}>
-          <h2 className="projects-header">Projects</h2>
           <div className="projects-divider">
             <div
               className="projects"
               onMouseEnter={() => skillsShow()}
               onMouseLeave={() => skillsHide()}
             >
+          <h2 className="projects-header">Projects</h2>
               <div
                 className="project-card"
                 onMouseEnter={() => mouseEnter("xstitch")}
@@ -244,8 +244,10 @@ export default function Home() {
                 </div>
                 <div className="project-description">
                   <h2>XStitch</h2>
+                  <h3>
+                    A cross-stitch pattern creating app with version history
+                  </h3>
                   <p>
-                    A cross-stitch pattern creating app with version history.
                     Users can create patterns, return to previous saved
                     versions, and generate pdfs to print out their patterns.
                     Built with React, Ruby on Rails, PostgreSQL, and Axios.
@@ -264,15 +266,19 @@ export default function Home() {
                 </div>
                 <div className="project-description">
                   <h2>Hungry Heroes</h2>
+                  <h3>
+                    A food pick-up ordering app
+                  </h3>
                   <p>
-                    A food pick-up ordering app built as a midterm project at
-                    Lighthouse Labs. Users can place orders, which notifies the
-                    restaurant via text message. The restaurant can respond with
-                    estimated wait time and notify the user when the order is
-                    ready for pickup.
+                    Users can place orders, which notifies the restaurant via
+                    text message.
+                    The restaurant can respond with estimated wait
+                    time and notify the user when the order is ready for pickup.
                     <br />
                     Front-end built using HTML/CSS/Bootstrap, Javascript, AJAX.
+                    <br />
                     Back-end was built using Node.js, Express, and PostreSQL.
+                    <br />
                     Twilio API was used for sending text messages.
                   </p>
                 </div>
@@ -289,10 +295,10 @@ export default function Home() {
                 </div>
                 <div className="project-description">
                   <h2>Tweeter</h2>
+                  <h3>A simple, single-page Twitter clone</h3>
                   <p>
-                    Tweeter is a simple, single-page Twitter clone. Front end
-                    was built with HTML, CSS, JS, jQuery and AJAX. Back end was
-                    built using Node and Express.
+                    Front end was built with HTML, CSS, JS, jQuery and AJAX.
+                    Back end was built using Node and Express.
                   </p>
                 </div>
               </div>
@@ -308,9 +314,9 @@ export default function Home() {
                 </div>
                 <div className="project-description">
                   <h2>Jungle</h2>
+                  <h3>A mini e-commerce application</h3>
                   <p>
-                    Jungle is a mini e-commerce application built with Rails
-                    4.2, PostgreSQL, Stripe, and Bootstrap
+                    Built with Rails 4.2, PostgreSQL, Stripe, and Bootstrap
                   </p>
                 </div>
               </div>
@@ -326,9 +332,9 @@ export default function Home() {
                 </div>
                 <div className="project-description">
                   <h2>Scheduler</h2>
+                  <h3>A single page interview scheduling app</h3>
                   <p>
-                    Scheduler is a single page interview scheduling app built
-                    with React. Storybook, Jest tests, and Cypress were used in
+                    Built with React. Storybook, Jest tests, and Cypress were used in
                     the development of the project.
                   </p>
                 </div>
@@ -367,7 +373,7 @@ export default function Home() {
         </ParallaxLayer>
       </Parallax>
       <div className={`skills ${skills}`} onMouseEnter={() => skillsShow()}>
-        <h3>Skills</h3>
+        <h2>Skills</h2>
         <div className={`skill-container ${project.js}`}>
           <FaJsSquare size={30} />
           JavaScript
