@@ -1,7 +1,7 @@
 .projects-header {
   font-size: 2.5em;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .projects-divider {
@@ -79,7 +79,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  text-align: left;
   padding-left: 50px;
 }
 
