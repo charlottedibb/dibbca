@@ -2,7 +2,7 @@
 
 dibb.ca is my personal porfolio website. Built with React. Background animation created with Blender. 
 
-<img src="https://github.com/charcharmasonjar/dibbca/blob/master/src/gifs/home_scroll.gif" width="500">
+<img src="https://github.com/charcharmasonjar/dibbca/blob/master/src/gifs/home_scroll.gif">
 
 ## Getting Started
 
