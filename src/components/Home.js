@@ -343,9 +343,9 @@ export default function Home() {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={0}>
+        {/* <ParallaxLayer offset={4} speed={0}>
           <Photography />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
         <ParallaxLayer offset={4.4} speed={0}>
           <div className="contact-container">
             <MyForm />
