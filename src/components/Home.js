@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
+import Photography from "./Photography"
 import MyForm from "./myform.js";
 import ocean from "../videos/ocean_tall.mp4";
 import {
@@ -341,6 +342,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={0}>
+          <Photography />
         </ParallaxLayer>
         <ParallaxLayer offset={4.4} speed={0}>
           <div className="contact-container">
